@@ -1,0 +1,13 @@
+query InstrumentRefData($ObjectList: [String!]) {
+  DerivedContentCmo(objectIds: $ObjectList) {
+    ObjectId
+    SwissStampDutyTax {
+      AssetTypeDescription
+      IssuerDomicileText
+      SwissStampDutyFlag
+      TaxationComment
+      TaxationType
+    }
+  }
+}
+
